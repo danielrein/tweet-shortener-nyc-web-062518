@@ -15,6 +15,7 @@ end
 
 def word_substituter(string)
   splitTweet = string.split(" ")
+
   splitTweet.each_with_index { | word, i |
     wordClean = word.downcase.gsub(/[\W\s\d]/, '')
     if dictionary.keys.include? wordClean.to_sym
