@@ -26,6 +26,7 @@ def word_substituter(string)
   splitTweet.join(" ")
 end
 
+
 def bulk_tweet_shortener(array)
   array.collect { |x| puts word_substituter(x) }
 end
